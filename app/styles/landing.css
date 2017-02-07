@@ -35,17 +35,7 @@
      position: relative;
      padding: 2rem;
      text-align: center;
-     opacity: 0;
-     -webkit-transform: scaleX(0.7) translateY(4rem);
-     -moz-transform: scaleX(0.7) translateY(4rem);
-     transform: scaleX(0.7) translateY(4rem);
-     -webkit-transition: all 0.25s ease linear;
-     -moz-transition: all 0.25s ease linear;
-     transition: all 0.25s ease linear;
-     -webkit-transition-delay: 0.5s;
-     -moz-transition-delay: 0.5s;
-     transition-delay: 0.5s;
-
+     opacity: 1;
  }
 
  .point .point-title {
