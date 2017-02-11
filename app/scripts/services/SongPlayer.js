@@ -49,12 +49,12 @@
             if (currentSong !== song) {
                 setSong(song);
                 playSong(song); 
-        }   else if (currentSong === song) {
-            if (currentBuzzObject.isPaused()) {
+            } else if (currentSong === song) {
+                if (currentBuzzObject.isPaused()) {
                 currentBuzzObject.play();
-        }
+                }
          
-        } 
+            } 
     };
      
        /**
