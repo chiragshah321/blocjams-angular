@@ -4,8 +4,6 @@
 
         var currentAlbum = Fixtures.getAlbum();
          
-         
-         
         /**
         * @desc Get index of song
         * @type {Object}
@@ -74,6 +72,7 @@
             } else if (SongPlayer.currentSong === song) {
                 if (currentBuzzObject.isPaused()) {
                     currentBuzzObject.play();
+                    SongPlayer.currentSong.playing = true;
                 }
             } 
         };
@@ -106,6 +105,7 @@
                 playSong(song);
             }
         };
+
          /**
         * @function SongPlayer.next
         * @desc Pauses audiofile and starts playing next song
