@@ -36,7 +36,7 @@
             
             */
             scope.thumbStyle = function() {
-                return percentString();
+                return {left: percentString()};
             }; 
         
     
