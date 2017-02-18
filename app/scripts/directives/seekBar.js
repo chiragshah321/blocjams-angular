@@ -60,3 +60,4 @@
          .module('blocJams')
          .directive('seekBar', ['$document', seekBar]);
  })();
+ 
