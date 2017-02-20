@@ -36,8 +36,16 @@
                  var value = scope.value;
                  var max = scope.max;
                  var percent = value / max * 100;
-                 return percent + "%";
+                
+                 if (percent > 0 ) {
+                    return percent + "%";
+                 }
+                 else {
+                     return 0 + "%";
+                 }
             };
+            
+
  
             scope.fillStyle = function() {
                 return {width: percentString()};
