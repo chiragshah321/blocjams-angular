@@ -31,21 +31,18 @@
                 scope.max = newValue;
             });
  
- 
             var percentString = function () {
-                 var value = scope.value;
-                 var max = scope.max;
-                 var percent = value / max * 100;
+                var value = scope.value;
+                var max = scope.max;
+                var percent = value / max * 100;
                 
-                 if (percent > 0 ) {
+                if (percent > 0 ) {
                     return percent + "%";
-                 }
-                 else {
-                     return 0 + "%";
-                 }
+                } else {
+                    return 0 + "%";
+                }
             };
 
- 
             scope.fillStyle = function() {
                 return {width: percentString()};
             };
@@ -54,7 +51,6 @@
                 return {left: percentString()};
             }; 
         
-    
             scope.onClickSeekBar = function(event) {
                 var percent = calculatePercent(seekBar, event);
                 scope.value = percent * scope.max;
@@ -62,19 +58,17 @@
             };
             
             scope.trackThumb = function() {
-                $document.bind('mousemove.thumb', function(event) {
+                $(document).bind('mousemove.thumb', function(event) {
                     var percent = calculatePercent(seekBar, event);
                     scope.$apply(function() {
                         scope.value = percent * scope.max;
                         notifyOnChange(scope.value);
                     });
                 });
- 
-                $document.bind('mouseup.thumb', function() {
-                    $document.unbind('mousemove.thumb');
-                    $document.unbind('mouseup.thumb');
+                $(document).bind('mouseup.thumb', function() {
+                    $(document).unbind('mousemove.thumb');
+                    $(document).unbind('mouseup.thumb');
                 });
-                
             };
                 
             var notifyOnChange = function(newValue) {

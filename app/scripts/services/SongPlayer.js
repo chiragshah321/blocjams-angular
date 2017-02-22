@@ -70,7 +70,7 @@
         
         /**
         * @function stopSong
-        * @desc Stopss song
+        * @desc Stops song
         * @param {Object} song
         */
         var stopSong = function(song){
@@ -124,6 +124,7 @@
                 playSong(song);
             }
         };
+        
          /**
         * @function SongPlayer.next
         * @desc Pauses audiofile and starts playing next song
@@ -165,7 +166,6 @@
                 currentBuzzObject.setVolume(volume);
             }
         };
-        
         
         return SongPlayer;
      }

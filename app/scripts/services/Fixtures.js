@@ -33,22 +33,22 @@
      };
      
     Fixtures.getAlbum = function() {
-         return albumPicasso;
+        return albumPicasso;
      };
      
-     Fixtures.getCollection = function(numberOfAlbums){
-         var albums = [];
+    Fixtures.getCollection = function(numberOfAlbums){
+        var albums = [];
          
-         for (var i = 0; i < numberOfAlbums; i++) {
-         albums.push(albumPicasso);
+        for (var i = 0; i < numberOfAlbums; i++) {
+        albums.push(albumPicasso);
           
-         }
+        }
      
-         return albums;
+        return albums;
          
-         };
+        };
          
-         return Fixtures;
+        return Fixtures;
     }
  
      angular /*global angular*/
