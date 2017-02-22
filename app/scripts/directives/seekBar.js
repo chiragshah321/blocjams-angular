@@ -1,5 +1,5 @@
  (function() {
-     function seekBar($document) {
+    function seekBar($document) {
          
         var calculatePercent = function(seekBar, event) {
             var offsetX = event.pageX - seekBar.offset().left;
@@ -31,7 +31,7 @@
                 scope.max = newValue;
             });
  
-            var percentString = function () {
+            var percentString = function() {
                 var value = scope.value;
                 var max = scope.max;
                 var percent = value / max * 100;
