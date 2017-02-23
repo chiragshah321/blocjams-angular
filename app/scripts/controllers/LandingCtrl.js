@@ -6,4 +6,4 @@
      angular /*global angular*/
          .module('blocJams')
          .controller('LandingCtrl', LandingCtrl);
- })();
+})();

@@ -1,4 +1,4 @@
- (function() {
+(function() {
     function SongPlayer($rootScope, Fixtures) {
         var SongPlayer = {};
 
@@ -173,5 +173,5 @@
      angular /* global angular */
          .module('blocJams')
          .factory('SongPlayer', ['$rootScope', 'Fixtures', SongPlayer]);
- })();
+})();
  

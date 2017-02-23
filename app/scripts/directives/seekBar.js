@@ -84,5 +84,5 @@
      angular /*global angular*/
          .module('blocJams')
          .directive('seekBar', ['$document', seekBar]);
- })();
+})();
  

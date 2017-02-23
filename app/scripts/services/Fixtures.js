@@ -40,8 +40,8 @@
             var albums = [];
              
             for (var i = 0; i < numberOfAlbums; i++) {
-            albums.push(albumPicasso);
-            }
+                    albums.push(albumPicasso);
+                }
             return albums;
         };
          
@@ -51,5 +51,4 @@
      angular /*global angular*/
          .module('blocJams')
          .factory('Fixtures', Fixtures);
- })();
- 
+})();
